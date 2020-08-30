@@ -73,6 +73,11 @@ a:hover {
 
 
 /* containers */
+.padder {
+    width: 100%;
+    height: 100px;
+}
+
 .customcontainersmall {
 	border: 1px grey;
 	text-align: center;
@@ -89,7 +94,7 @@ a:hover {
 }
 
 .img-box {
-    height: 500px;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -103,6 +108,7 @@ a:hover {
 
 .grid1 {
     margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .border-container {
