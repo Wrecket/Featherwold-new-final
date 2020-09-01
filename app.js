@@ -2,7 +2,7 @@ const toggler = document.querySelector(".navbar-toggler");
 const fade = document.querySelector(".fade-wrap");
 const show = document.querySelector(".show");
 const navbar = document.querySelector("#navbarSupportedContent");
-topbutton = document.getElementById("topBtn");
+const topbutton = document.getElementById("topBtn");
 
 fade.addEventListener("click", function(){
 	if (navbar.classList.contains("show")) {

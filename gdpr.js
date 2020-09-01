@@ -1,8 +1,23 @@
 const gdpr = document.querySelector('#gdprBanner');
-const gdprBtn = document.querySelector('#okBtn');
+const yes = document.querySelector('#yes');
+const no = document.querySelector('#no');
+const body = document.querySelector("body");
+let gdprTick;
 
 window.onload = function() {
-	gdprBtn.addEventListener('click', function() {
-		gdpr.style.display = 'none';
+    if (gdprTick === true) {
+        gdpr.style.display = 'none';
+    }
+}
+
+window.onload = function() {
+	no.addEventListener('click', function() {
+        gdpr.style.display = 'none';
+        gdprTick = false
+    });
+    
+    yes.addEventListener('click', function() {
+        gdpr.style.display = 'none';
+        gdprTick = true
 	});
 };

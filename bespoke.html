@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lora&display=swap" rel="stylesheet">
     <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-    <script src="app.js"></script>
     <title>Featherwold</title>
 </head>
 <!-- navbar -->
@@ -25,17 +24,17 @@
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
                   <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="home.html" class="nav-item nav-link">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-item nav-link">ABOUT</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item current">
                         <a href="shop.html" class="nav-item nav-link">SHOP</a>
                     </li>
                     <li class="nav-item">
-                        <a href="gallery.html" class="nav-item nav-link current">GALLERY</a>
+                        <a href="about.html" class="nav-item nav-link">GALLERY</a>
                     </li>
                     <li class="nav-item">
                         <a href="contact.html" class="nav-item nav-link">CONTACT US</a>
@@ -46,16 +45,15 @@
     </header>
     <!-- /navbar -->
 <body>
-    <button onclick="topFunction()" id="topBtn" class="font btn" title="Go to top"><img class="arrow" src="img/up-arrow.png"></button>
-    <div class="fade-wrap">
+<div class="fade-wrap">
     <!-- Underbanner -->
     <div class="container-fluid underbanner-container text-center desktop">
         <ul class="underbanner">
-            <a href="delivery.html"><li class="underbanner-list-item"><span class="bold">FREE</span> DELIVERY ON ORDERS OVER £30</li></a>
-            <li class="underbanner-list-item size">|</li>
-            <a href="returns.html"><li class="underbanner-list-item">30 DAY RETURNS</li></a>
-            <li class="underbanner-list-item size">|</li>
-            <a href="contact.html"><li class="underbanner-list-item">ROUND THE CLOCK CUSTOMER SERVICE</li></a>
+            <li class="underbanner-list-item"><span class="bold">FREE</span> DELIVERY ON ORDERS OVER £30</li>
+            <li class="underbanner-list-item">|</li>
+            <li class="underbanner-list-item">30 DAY RETURNS</li>
+            <li class="underbanner-list-item">|</li>
+            <li class="underbanner-list-item">ROUND THE CLOCK CUSTOMER SERVICE</li>
         </ul>
     </div>
     <!-- /underbanner -->
@@ -65,17 +63,17 @@
             <div class="carousel-inner">
             <div class="carousel-item active carousel-item-mobile">
                 <div class="slide text-center">
-                    <a href="delivery.html"><p class="mobile-scroll">FREE DELIVERY ON ORDERS OVER £30</p></a>
+                    <p class="mobile-scroll">FREE DELIVERY ON ORDERS OVER £30</p>
                 </div>
             </div>
             <div class="carousel-item carousel-item-mobile">
                 <div class="slide text-center">
-                    <a href="returns.html"><p class="mobile-scroll">30 DAY RETURNS</p></a>
+                    <p class="mobile-scroll">30 DAY RETURNS</p>
                 </div>
             </div>
             <div class="carousel-item carousel-item-mobile">
                 <div class="slide text-center">
-                    <a href="contact.html"><p class="mobile-scroll">ROUND THE CLOCK CUSTOMER SERVICE</p></a>
+                    <p class="mobile-scroll">ROUND THE CLOCK CUSTOMER SERVICE</p>
                 </div>
             </div>
             </div>
@@ -90,14 +88,15 @@
         </div>
       </div>
     <!-- /mobile carousel -->
+    <div class="padder1"></div>
     <!-- underunder -->
     <div class="border-container desktop">
         <div class="container-fluid underunder-container text-center">
             <ul class="underbanner">
                 <li class="underbanner-list-item"><span class="white bold">INTRODUCTORY OFFER</span></li>
-                <li class="underbanner-list-item size">|</li>
-                <li class="underbanner-list-item "><span class="bold">10% OFF</span> YOUR FIRST ORDER</li>
-                <li class="underbanner-list-item size">|</li>
+                <li class="underbanner-list-item">|</li>
+                <li class="underbanner-list-item"><span class="bold">10% OFF</span> YOUR FIRST ORDER</li>
+                <li class="underbanner-list-item">|</li>
                 <li class="underbanner-list-item">USE <span class="bold white">GIVEME10</span> AT THE BASKET</li>
             </ul>
         </div>
@@ -115,91 +114,68 @@
         </div>
     </div>
     <!-- /mobile underunder -->
-   <!-- photogrid -->
-   <div class="container-fluid text-center d-flex justify-content-center">
-    <div class="gallery-box container-fluid">
-        <div class="row row-grid">
-            <div class="column column-grid">
-            <img src="img/placeholder.jpg">
-            <img src="img/placeholdersmall.jpg">
-            </div>
-            <div class="column column-grid">
-            <img src="img/placeholdersmall.jpg">
-            <img src="img/placeholder.jpg">
-            </div>
-            <div class="column column-grid">
-            <img src="img/placeholder.jpg">
-            <img src="img/placeholdersmall.jpg">
-            </div>
-            <div class="column column-grid">
-            <img src="img/placeholder.jpg">
-            <img src="img/placeholdersmall.jpg">
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /Photogrid -->
 </body>
 <footer> 
-    <div class="footer-wrap font">
+        <div class="footer-wrap font">
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm footer-col cust">
+                    <h2>Customer Services</h2>
+                    <ul class="footer-list">
+                        <a href="contact.html"><li>Contact us</li></a>
+                        <a href="help.html"><li>Help & FAQs</li></a>
+                        <a href="delivery.html"><li>Delivery Information</li></a>
+                        <a href="returns.html"><li>Returns Policy</li></a>
+                        <a href="track.html"><li>Track your order</li></a>
+                        <a href="payment.html"><li>Payment information</li></a>
+                        <a href="privacy.html"><li>Privacy Policy</li></a>
+                        <a href="cookie.html"><li>Cookie Policy</li></a>
+                    </ul>
+                  </div>
+                  <div class="col-sm footer-col about">
+                    <h2>About Us</h2>
+                    <ul class="footer-list">
+                        <a href="about.html"><li>Featherwold</li></a>
+                        <a href="reviews.html"><li>Customer reviews</li></a>
+                        <a href="terms.html"><li>Terms & Conditions</li></a>
+                    </ul>
+                  </div>
+                  <div class="col-sm footer-col logo">
+                   
+                  </div>
+                  <div class="col-sm footer-col logo">
+                    <div class="logo-box">
+                        <img src="img/Featherwoldsmall.png" alt="Featherwold logo">
+                    </div>
+                    <div class="icon-box">
+                        <img class="social-icon" src="img/instagram.png" alt="instagram">
+                        <img class="social-icon" src="img/facebook.png" alt="facebook"> 
+                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="padder1"></div>
+        </div>
+
+        <!-- foot grid -->
+        <div class="padder1"></div>
         <div class="container-fluid">
             <div class="row">
-              <div class="col-sm footer-col cust">
-                <h2>Customer Services</h2>
-                <ul class="footer-list">
-                    <a href="contact.html"><li>Contact us</li></a>
-                    <a href="help.html"><li>Help & FAQs</li></a>
-                    <a href="delivery.html"><li>Delivery Information</li></a>
-                    <a href="returns.html"><li>Returns Policy</li></a>
-                    <a href="track.html"><li>Track your order</li></a>
-                    <a href="payment.html"><li>Payment information</li></a>
-                    <a href="privacy.html"><li>Privacy Policy</li></a>
-                    <a href="cookie.html"><li>Cookie Policy</li></a>
-                </ul>
+              <div class="col-sm">
+                    <p class="copyright font">Copyright &copy; Featherwold 2020</p>
               </div>
-              <div class="col-sm footer-col about">
-                <h2>About Us</h2>
-                <ul class="footer-list">
-                    <a href="about.html"><li>Featherwold</li></a>
-                    <a href="reviews.html"><li>Customer reviews</li></a>
-                    <a href="terms.html"><li>Terms & Conditions</li></a>
-                </ul>
-              </div>
-              <div class="col-sm footer-col logo">
-               
-              </div>
-              <div class="col-sm footer-col logo">
-                <div class="logo-box">
-                    <img src="img/Featherwoldsmall.png" alt="Featherwold logo">
-                </div>
-                <div class="icon-box">
-                    <img class="social-icon" src="img/instagram.png" alt="instagram">
-                    <img class="social-icon" src="img/facebook.png" alt="facebook"> 
-                 </div>
+              <div class="col-sm"> 
+                    <div class="container-fluid d-flex justify-content-end ">             
+                        <img class="payment-icon" src="img/mastercard.png" alt="mastercard">
+                        <img class="payment-icon" src="img/paypal.png" alt="paypal">
+                        <img class="payment-icon" src="img/visa.png" alt="visa">
+                        <img class="payment-icon" src="img/american-express.png" alt="american express">     
+                    </div>           
               </div>
             </div>
           </div>
-          <div class="padder1"></div>
-    </div>
-    <!-- foot grid -->
-    <div class="padder1"></div>
-    <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm">
-            <p class="copyright font">Copyright &copy; 2020 Featherwold</p>
-          </div>
-          <div class="col-sm"> 
-                <div class="container-fluid d-flex justify-content-end ">             
-                    <img class="payment-icon" src="img/mastercard.png" alt="mastercard">
-                    <img class="payment-icon" src="img/paypal.png" alt="paypal">
-                    <img class="payment-icon" src="img/visa.png" alt="visa">
-                    <img class="payment-icon" src="img/american-express.png" alt="american express">     
-                </div>           
-          </div>
-        </div>
-      </div>
-    <!-- /foot grid -->   
-    </div>   
+        <!-- /foot grid -->
+        </div>      
 </footer>
 <script src="app.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
