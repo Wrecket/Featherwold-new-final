@@ -99,6 +99,8 @@ a:hover {
 .underbanner {
     list-style-type: none;
     flex-direction: row;
+    height: 100%;
+    padding-bottom: 10px;
 }
 
 .underbanner-list-item {
@@ -117,6 +119,10 @@ a:hover {
 	font-size: 1.2em;
 }
 
+.size {
+    font-size: 1.5rem;
+}
+
 ul {
     padding-inline-start: 0 !important;
 }
@@ -124,6 +130,10 @@ ul {
 .footer-list {
     list-style-type: none;
 
+}
+
+.shadow {
+    box-shadow: 0 3px 10px black;
 }
 
 .social-icon {
@@ -328,6 +338,15 @@ ul {
     transform: scale(1.1);
 }
 
+.gallery-box img {
+    transition: transform 2s ease;
+}
+
+.gallery-box img:hover {
+    transform: scale(1.1);
+}
+
+
 .grid1 {
     margin-top: 5%;
     margin-bottom: 10%;
@@ -420,12 +439,23 @@ ul {
     }
     .img-box {
         height: 500px;
+        width: 300px !important;
+        margin-left: 5% !important;
     }
     .contact-text {
         margin-bottom: 10%;
     }
-    .navbar-expand {
-        
+    .front-page-enter {
+        font-size: 1rem;
+    }
+    .front-page-logo {
+        margin-top: 40% !important;
+    }
+    .front-page-enter {
+        top: 80%;
+    }
+    .shop-image {
+        margin: 5% 1% ;
     }
 }
 
