@@ -316,6 +316,7 @@ ul {
 
 .img-box {
     height: 600px;
+    margin-bottom: 5%;
     overflow: hidden;
 }
 
@@ -410,6 +411,21 @@ ul {
 
     .logo-box {
         margin-top: 0;
+    }
+    .front-page-image {
+        margin-top: 0;
+    }
+    .top-pad {
+        margin-top: 7%
+    }
+    .img-box {
+        height: 500px;
+    }
+    .contact-text {
+        margin-bottom: 10%;
+    }
+    .navbar-expand {
+        
     }
 }
 
